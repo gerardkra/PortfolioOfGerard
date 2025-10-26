@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Gérard Kra</title>
+  <meta name="description" content="Contact Gérard Kra — Data Science & AI. Get in touch for collaboration, roles, or projects." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-inner container">
+      <a class="brand" href="index.html">Gérard Kra</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button id="theme-toggle" aria-label="Toggle theme">🌗</button>
+        <a class="btn btn-outline" href="CV_KRA_Gerard.pdf" target="_blank" rel="noopener">Download CV</a>
+      </div>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Open navigation">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="contact card slide-in">
+      <h1>Contact</h1>
+      <p>If you'd like to discuss a collaboration, research opportunity, or project, feel free to reach out. I respond promptly and with clarity.</p>
+
+      <!-- Contact Form -->
+      <form action="https://formspree.io/f/mwprpzld" method="POST" class="contact-form" novalidate>
+        <label>
+          <span>Your name</span>
+          <input type="text" name="name" required placeholder="Enter your full name">
+        </label>
+        <label>
+          <span>Your email</span>
+          <input type="email" name="email" required placeholder="you@example.com">
+        </label>
+        <label>
+          <span>Message</span>
+          <textarea name="message" rows="6" required placeholder="Write your message..."></textarea>
+        </label>
+        <div class="form-actions">
+          <button class="btn" type="submit">Send Message</button>
+          <a class="btn btn-outline" href="mailto:gerard.kra@example.com">Email me directly</a>
+        </div>
+      </form>
+
+      <div class="contact-meta">
+        <h3>Other ways to reach me</h3>
+        <ul class="quick-info">
+          <li><strong>Email:</strong> <a href="mailto:gerard.kra@epitech.eu">gerard.kra@epitech.eu</a></li>
+          <li><strong>GitHub:</strong> <a href="https://github.com/gerardkra" target="_blank">github.com/gerardkra</a></li>
+          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/g%C3%A9rardkra-data-engineer-devops-nlp-data-science-telecom" target="_blank">linkedin.com/in/gerardkra</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Gérard Kra — Data Science & AI</p>
+      <nav class="footer-links">
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

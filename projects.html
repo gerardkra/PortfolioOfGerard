@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projects — Gérard Kra</title>
+  <meta name="description" content="Project portfolio of Gérard Kra. Includes Job Board, NLP, and PFE on microbial species modelling." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-inner container">
+      <a class="brand" href="index.html">Gérard Kra</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button id="theme-toggle" aria-label="Toggle theme">🌗</button>
+        <a class="btn btn-outline" href="CV_KRA_Gerard.pdf" target="_blank" rel="noopener">Download CV</a>
+      </div>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Open navigation">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="projects-intro slide-in card">
+      <h1>Projects</h1>
+      <p>Selected projects with concise case studies: problem, approach, results, and lessons learned. Each entry shows technologies used and measurable outcomes when available.</p>
+    </section>
+
+    <section class="projects-grid">
+      <!-- Job Board -->
+      <article id="jobboard" class="project-card card slide-in">
+        <div class="project-header">
+          <h3>Job Board — Full-Stack Web Application</h3>
+          <p class="meta">Node.js • Express • MySQL • MVC • Docker</p>
+        </div>
+        <div class="project-body">
+          <p><strong>Problem:</strong> Need for a lightweight job board supporting company postings, role filters and secure authentication.</p>
+          <p><strong>Approach:</strong> MVC architecture separating concerns; REST API endpoints; server-side rendered pages for SEO; token-based auth and role-based access controls. Containerized the app for reproducible deployments (Docker).</p>
+          <ul>
+            <li><strong>Outcomes:</strong> Complete CRUD features, admin dashboard, testable API; project structured for CI and container deployment.</li>
+            <li><strong>Skills demonstrated:</strong> system design, backend engineering, database normalization, authentication patterns.</li>
+          </ul>
+        </div>
+        <div class="project-footer">
+          <a class="btn" href="https://github.com/EpitechMscProPromo2028/T-WEB-501-NCE_11" target="_blank" rel="noopener">View Repository</a>
+          <a class="btn btn-ghost" href="#">Live Demo (coming)</a>
+          <a class="btn btn-outline" href="JobBoard_README.pdf" target="_blank">Case Study PDF</a>
+        </div>
+      </article>
+
+      <!-- NLP -->
+      <article class="project-card card slide-in">
+        <div class="project-header">
+          <h3>NLP — Terminology Suppression Pipeline</h3>
+          <p class="meta">Python • spaCy • Text processing</p>
+        </div>
+        <div class="project-body">
+          <p><strong>Problem:</strong> Domain-specific vocabulary caused noisy signals and reduced model generalisation.</p>
+          <p><strong>Approach:</strong> Built a preprocessing pipeline with controlled vocabulary suppression and token normalization. Integrated with downstream NER / classification tasks.</p>
+          <p><strong>Outcome:</strong> Improved F1 on targeted datasets; pipeline modular and reusable across projects.</p>
+        </div>
+        <div class="project-footer">
+          <a class="btn" href="#" target="_blank" rel="noopener">Repository</a>
+        </div>
+      </article>
+
+      <!-- PFE -->
+      <article class="project-card card slide-in">
+        <div class="project-header">
+          <h3>PFE — Microbial Species Modeling</h3>
+          <p class="meta">Julia • Modeling • Parameter estimation</p>
+        </div>
+        <div class="project-body">
+          <p><strong>Problem:</strong> Selecting and validating microbial species models for experimental design.</p>
+          <p><strong>Approach:</strong> Implemented model selection, parameter estimation and cross-validation strategies in Julia with reproducible notebooks and documented experiments.</p>
+          <p><strong>Outcome:</strong> Clear validation protocol and reproducible results; code and report prepared for review.</p>
+        </div>
+        <div class="project-footer">
+          <a class="btn" href="#" target="_blank" rel="noopener">Report</a>
+        </div>
+      </article>
+
+    </section>
+
+    <section class="case-study card slide-in">
+      <h2>Case study — Job Board (short)</h2>
+      <p><strong>Key decisions:</strong> chose server-side rendering for SEO and a small REST API for interactive features; used MySQL for relational consistency and Docker to simplify deployments.</p>
+      <p><strong>Metrics & learnings:</strong> development focused on clear separation of concerns; next steps include adding unit/integration tests and end-to-end CI runs.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Gérard Kra</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
